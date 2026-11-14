@@ -1,11 +1,11 @@
 # Knee MRI Abnormality Detection: From 0.67 to 0.82
 
 **RSNA Knee Abnormality Detection · Kaggle · October 2026**
-Alex Tanasescu, with Sherry, Cristina and Filip
+Alex Tanasescu, Sherriff Kadiri and Cristina Bindiu
 
 This was my first Kaggle competition, and one of the most rewarding projects I've worked on. In one week I went from raw DICOM files to a submission running offline under a time limit, and learned the parts of machine learning that tutorials skip: validating honestly on a tiny labelled set, telling a real improvement from noise, recovering from runs that silently failed, and choosing final submissions under uncertainty. This write-up covers what worked, what didn't, and why.
 
-**Result:** public leaderboard macro AUC **0.822**, up from a first baseline of 0.67 on our validation set. Private leaderboard: *[score, rank X of Y]*.
+**Result:** public leaderboard macro AUC **0.822**, up from a first baseline of 0.67 on our validation set. Private leaderboard: *[score, rank 4977 of 6299]*.
 
 ![Validation AUC by step](images/progress.png)
 
@@ -402,6 +402,6 @@ The 4-model ensemble (50%) plus aggregators on model 14 and on 14aug (25% each).
 
 *This was a team effort.*
 
-Built by Alex Tanasescu, Sherry, Cristina and Filip. Alex worked on the models and submissions, Sherry on the report labels, and Cristina on the data pipeline and augmentation.
+Built by Alex Tanasescu, Sherriff Kadiri and Cristina Bindiu. Alex worked on the models and submissions, Sherry on the report labels, and Cristina on the data pipeline and augmentation.
 
 **Tools:** PyTorch, timm, vLLM, pydicom, OpenCV, pandas, NumPy, scikit-learn, Kaggle T4 GPUs.
