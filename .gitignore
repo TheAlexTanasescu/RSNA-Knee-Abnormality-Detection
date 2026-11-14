@@ -1,0 +1,21 @@
+# Secrets
+kaggle.json
+.kaggle/
+
+# Competition data and derived files (not redistributable)
+*.dcm
+*.npy
+*.csv
+
+# Model weights and large outputs
+*.pt
+*.pth
+*.bin
+
+# Temporary download folder from pull_notebooks.sh
+notebooks/_kaggle_raw/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
